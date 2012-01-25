@@ -1,0 +1,231 @@
+#N canvas 0 51 1600 816 10;
+#N canvas 1 72 1598 790 tela 0;
+#X obj 174 629 rectangle 2 2;
+#X obj 1039 423 translateXYZ;
+#X obj 371 406 rotateXYZ;
+#X obj 1150 406 +;
+#X obj 1180 406 +;
+#X obj 1210 406 +;
+#X obj 1153 287 hsl 128 15 -50 50 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 6350 1;
+#X obj 481 389 +;
+#X obj 511 389 +;
+#X obj 541 389 +;
+#X obj 283 612 +;
+#X obj 313 612 +;
+#X obj 3 227 inlet;
+#X obj 1183 327 hsl 128 15 -50 50 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 6350 1;
+#X obj 1213 366 hsl 128 15 -50 50 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 6350 1;
+#X obj 1168 304 hsl 128 15 -50 50 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 6350 1;
+#X obj 1118 272 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1198 344 hsl 128 15 -50 50 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 6350 1;
+#X obj 1118 312 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1228 383 hsl 128 15 -50 50 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 6350 1;
+#X obj 1118 351 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 484 271 hsl 128 15 -180 180 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 6350 1;
+#X obj 514 311 hsl 128 15 -180 180 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 6350 1;
+#X obj 544 350 hsl 128 15 -180 180 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 6350 1;
+#X obj 499 288 hsl 128 15 -50 50 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6350 1;
+#X obj 449 256 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 529 328 hsl 128 15 -50 50 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6350 1;
+#X obj 449 296 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 559 367 hsl 128 15 -50 50 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6350 1;
+#X obj 449 335 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 286 534 hsl 128 15 -50 50 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6604 1;
+#X obj 316 573 hsl 128 15 -50 50 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6604 1;
+#X obj 301 551 hsl 128 15 -50 50 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6350 1;
+#X obj 221 519 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 331 590 hsl 128 15 -50 50 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6350 1;
+#X obj 221 558 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 3 273 colorRGB 1 1 1 1;
+#X obj 3 318 alpha;
+#X obj 798 101 image /home/guzz/PD/ZZ/Imagens/retangulo.gif;
+#X obj 704 -80 getdir;
+#X obj 619 -79 loadbang;
+#X msg 704 -52 set open \$1/Imagens/retangulo.gif;
+#X msg 704 -25 open /home/guzz/PD/ZZ/Imagens/retangulo.gif;
+#X obj 484 18 knob 70 70 -180 180 0 0 empty empty empty 0 -8 0 8 -241282
+-257985 -257985 3450 1;
+#X obj 625 18 knob 70 70 -180 180 0 0 empty empty empty 0 -8 0 8 -257985
+-241282 -257985 3450 1;
+#X obj 772 18 knob 70 70 -180 180 0 0 empty empty empty 0 -8 0 8 -257985
+-241282 -257985 3450 1;
+#X obj 484 116 knob 70 70 -30 30 0 0 empty \$0-start empty 0 -8 64
+8 -1 -1 -257985 3450 1;
+#X obj 625 116 knob 70 70 -30 30 0 0 empty \$0-start empty 0 -8 64
+8 -257985 -1 -257985 3450 1;
+#X obj 772 116 knob 70 70 -30 30 0 0 empty \$0-start empty 0 -8 64
+8 -1 -1 -257985 3450 1;
+#X obj 1119 2 grid grid1 196 -15 15 196 -15 15 1 0.01 0.01 10 10 847
+713;
+#X obj 96 4 vsl 30 192 0 1 0 0 empty empty empty 0 -9 0 10 -33289 -257985
+-257985 19100 1;
+#X obj 190 3 vsl 30 192 -5 5 0 0 empty empty empty 0 -9 0 10 -33289
+-257985 -257985 13370 1;
+#X obj 379 4 vsl 30 192 -1 1 0 0 empty \$0-start empty 0 -9 0 10 -241282
+-1 -257985 9550 1;
+#X obj 224 167 hsl 150 30 -1 1 0 0 empty \$0-start empty -2 -8 0 10
+-241282 -1 -257985 7450 1;
+#X obj 225 3 hsl 150 30 -5 5 0 0 empty empty empty -2 -8 0 10 -33289
+-257985 -257985 10430 1;
+#X obj 1010 4 vsl 30 192 -5 5 0 0 empty empty empty 0 -9 0 10 -33289
+-241282 -257985 9550 1;
+#X obj 1044 4 vsl 30 192 -1 1 0 0 empty \$0-start empty 0 -9 0 10 -241282
+-1 -257985 9550 1;
+#X obj 1558 20 bng 37 250 35 0 empty empty empty 17 7 0 10 -241282
+-1 -1;
+#X obj 1557 410 s pd-zz.Retangulo.pd;
+#X msg 1557 339 menusaveas;
+#X obj 1323 4 vsl 30 192 -1 1 0 0 empty \$0-start empty 0 -9 0 10 -241282
+-1 -257985 9550 1;
+#X obj 1359 166 hsl 192 30 -1 1 0 0 empty \$0-start empty -2 -8 0 10
+-241282 -1 -257985 9550 1;
+#X msg 481 430 set \$1;
+#X msg 510 458 set \$1;
+#X msg 541 486 set \$1;
+#X msg 481 447 0;
+#X msg 510 475 0;
+#X msg 541 503 0;
+#X msg 1210 503 set \$1;
+#X msg 1210 520 0;
+#X msg 96 -62 1;
+#X msg 222 -62 2;
+#X msg 383 -62 0;
+#X obj 458 -45 s \$0-start;
+#X msg 974 650 goto 98 98;
+#X obj 1417 44 bng 70 250 50 0 empty empty empty 17 7 0 10 -257985
+-1 -1;
+#X obj 1365 255 getdir;
+#X obj 1007 -63 symbol;
+#X obj 1070 -63 r getdir;
+#X obj 1007 -35 s dir;
+#X msg 1365 303 \; pd open zz.Projetor.pd \$1/Projetores;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 1;
+#X connect 4 0 1 2;
+#X connect 5 0 1 3;
+#X connect 5 0 68 0;
+#X connect 6 0 3 0;
+#X connect 7 0 2 1;
+#X connect 7 0 62 0;
+#X connect 8 0 2 2;
+#X connect 8 0 63 0;
+#X connect 9 0 2 3;
+#X connect 9 0 64 0;
+#X connect 10 0 0 1;
+#X connect 11 0 0 2;
+#X connect 12 0 36 0;
+#X connect 13 0 4 0;
+#X connect 14 0 5 0;
+#X connect 15 0 3 1;
+#X connect 15 0 16 0;
+#X connect 16 0 6 0;
+#X connect 17 0 18 0;
+#X connect 17 0 4 1;
+#X connect 18 0 13 0;
+#X connect 19 0 20 0;
+#X connect 19 0 5 1;
+#X connect 20 0 14 0;
+#X connect 21 0 7 0;
+#X connect 22 0 8 0;
+#X connect 23 0 9 0;
+#X connect 24 0 25 0;
+#X connect 24 0 7 1;
+#X connect 25 0 21 0;
+#X connect 26 0 27 0;
+#X connect 26 0 8 1;
+#X connect 27 0 22 0;
+#X connect 28 0 29 0;
+#X connect 28 0 9 1;
+#X connect 29 0 23 0;
+#X connect 30 0 10 0;
+#X connect 31 0 11 0;
+#X connect 32 0 33 0;
+#X connect 32 0 10 1;
+#X connect 33 0 30 0;
+#X connect 34 0 35 0;
+#X connect 34 0 11 1;
+#X connect 35 0 31 0;
+#X connect 36 0 37 0;
+#X connect 37 0 2 0;
+#X connect 39 0 41 0;
+#X connect 39 0 77 1;
+#X connect 40 0 39 0;
+#X connect 40 0 65 0;
+#X connect 40 0 66 0;
+#X connect 40 0 67 0;
+#X connect 40 0 70 0;
+#X connect 40 0 69 0;
+#X connect 40 0 74 0;
+#X connect 40 0 71 0;
+#X connect 40 0 72 0;
+#X connect 41 0 42 0;
+#X connect 42 0 38 0;
+#X connect 43 0 21 0;
+#X connect 44 0 22 0;
+#X connect 45 0 23 0;
+#X connect 46 0 24 0;
+#X connect 47 0 26 0;
+#X connect 48 0 28 0;
+#X connect 49 0 6 0;
+#X connect 49 1 13 0;
+#X connect 50 0 36 4;
+#X connect 51 0 31 0;
+#X connect 52 0 34 0;
+#X connect 53 0 32 0;
+#X connect 54 0 30 0;
+#X connect 55 0 14 0;
+#X connect 56 0 19 0;
+#X connect 57 0 59 0;
+#X connect 59 0 58 0;
+#X connect 60 0 17 0;
+#X connect 61 0 15 0;
+#X connect 62 0 65 0;
+#X connect 63 0 66 0;
+#X connect 64 0 67 0;
+#X connect 65 0 43 0;
+#X connect 66 0 44 0;
+#X connect 67 0 45 0;
+#X connect 68 0 69 0;
+#X connect 69 0 55 0;
+#X connect 70 0 50 0;
+#X connect 71 0 51 0;
+#X connect 71 0 54 0;
+#X connect 72 0 73 0;
+#X connect 74 0 49 0;
+#X connect 75 0 76 0;
+#X connect 76 0 80 0;
+#X connect 77 0 79 0;
+#X connect 78 0 77 0;
+#X coords 0 -1 1 1 1595 200 1 0 0;
+#X restore -370 613 pd tela;
+#X obj -371 1 cnv 15 1596 60 empty empty empty 20 12 0 14 -245380 -66577
+0;
+#X obj -371 28 cnv 15 1596 582 empty empty empty 20 12 0 14 -1 -66577
+0;
+#X obj -370 5 gemhead;
+#X connect 3 0 0 0;

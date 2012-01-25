@@ -1,0 +1,10 @@
+#N canvas 626 238 450 300 10;
+#X obj 243 92 loadbang;
+#X msg 243 145 \; pd-ZZ.pd menuclose;
+#X obj 243 121 delay 1000;
+#X obj 134 264 s pd-Tela;
+#X msg 137 206 donecanvasdialog 1 -1 1 0 -1 1 1 1595 200 0 0;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 2 0 4 0;
+#X connect 4 0 3 0;
